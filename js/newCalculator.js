@@ -2,7 +2,14 @@ function myGrade() {
     var text;
     var Th = 3;
     var Pr = 1.5;
-
+    // 510201 Structured Programming Language   3.0
+    //  510202 Structured Programming Language Lab  1.5
+    // 510203 Electrical and Electronic Circuit  3.0 
+    // 510204 Electrical and Electronic Circuit Lab 1.5
+    //  510205 Calculus  3.0 
+    // 510207 Physics 3.0 
+    // 510209 English 3.0 
+    
     //1st semester
     // 510201
     var G = document.getElementById("myInput510201").value
