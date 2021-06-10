@@ -239,19 +239,19 @@ function grade4() {
    
 
     // retrieve user input
-    ingr[0] = document.getElementById("510201").value;
-    ingr[1] = document.getElementById("510202").value;
-    ingr[2] = document.getElementById("510203").value;
-    ingr[3] = document.getElementById("510204").value;
-    ingr[4] = document.getElementById("510205").value;
-    ingr[5] = document.getElementById("510207").value;
-    ingr[6] = document.getElementById("510209").value;
+    ingr[0] = document.getElementById("520221").value;
+    ingr[1] = document.getElementById("520222").value;
+    ingr[2] = document.getElementById("520223").value;
+    ingr[3] = document.getElementById("520224").value;
+    ingr[4] = document.getElementById("520225").value;
+    ingr[5] = document.getElementById("520226").value;
+    ingr[6] = document.getElementById("520227").value;
    
     
   
 
     //credits
-    incr = [3,1.5,3,1.5,3,3,3]
+    incr = [3,1.5,3,1.5,3,1.5,3]
   
 
     // Calculate GPA
@@ -314,19 +314,19 @@ function grade5() {
    
 
     // retrieve user input
-    ingr[0] = document.getElementById("510201").value;
-    ingr[1] = document.getElementById("510202").value;
-    ingr[2] = document.getElementById("510203").value;
-    ingr[3] = document.getElementById("510204").value;
-    ingr[4] = document.getElementById("510205").value;
-    ingr[5] = document.getElementById("510207").value;
-    ingr[6] = document.getElementById("510209").value;
+    ingr[0] = document.getElementById("530201").value;
+    ingr[1] = document.getElementById("530202").value;
+    ingr[2] = document.getElementById("530203").value;
+    ingr[3] = document.getElementById("530204").value;
+    ingr[4] = document.getElementById("530205").value;
+    ingr[5] = document.getElementById("530206").value;
+    ingr[6] = document.getElementById("530207").value;
    
     
   
 
     //credits
-    incr = [3,1.5,3,1.5,3,3,3]
+    incr = [3,1.5,3,1.5,3,1.5,3]
   
 
     // Calculate GPA
@@ -345,7 +345,7 @@ function grade5() {
         else if (ingr[x] == gr[9] || ingr[x] == gr[10] ) {
             alert("Error- For Grade F / NA  GPA= Incomplete")
             var msg = "Incomplete"
-            document.getElementById("demo1").innerHTML = msg;
+            document.getElementById("demo5").innerHTML = msg;
             return 0;
 
         }
@@ -366,7 +366,7 @@ function grade5() {
     }
     //result
     var gpa = allgr / allcr;
-    document.getElementById("demo1").innerHTML = gpa.toFixed(2);
+    document.getElementById("demo5").innerHTML = gpa.toFixed(2);
    
 
     
@@ -389,19 +389,19 @@ function grade6() {
    
 
     // retrieve user input
-    ingr[0] = document.getElementById("510201").value;
-    ingr[1] = document.getElementById("510202").value;
-    ingr[2] = document.getElementById("510203").value;
-    ingr[3] = document.getElementById("510204").value;
-    ingr[4] = document.getElementById("510205").value;
-    ingr[5] = document.getElementById("510207").value;
-    ingr[6] = document.getElementById("510209").value;
+    ingr[0] = document.getElementById("530219").value;
+    ingr[1] = document.getElementById("530220").value;
+    ingr[2] = document.getElementById("530221").value;
+    ingr[3] = document.getElementById("530222").value;
+    ingr[4] = document.getElementById("530223").value;
+    ingr[5] = document.getElementById("530224").value;
+    ingr[6] = document.getElementById("530225").value;
    
     
   
 
     //credits
-    incr = [3,1.5,3,1.5,3,3,3]
+    incr = [3,1.5,3,1.5,3,1.5,3]
   
 
     // Calculate GPA
@@ -420,7 +420,7 @@ function grade6() {
         else if (ingr[x] == gr[9] || ingr[x] == gr[10] ) {
             alert("Error- For Grade F / NA  GPA= Incomplete")
             var msg = "Incomplete"
-            document.getElementById("demo1").innerHTML = msg;
+            document.getElementById("demo6").innerHTML = msg;
             return 0;
 
         }
@@ -441,7 +441,7 @@ function grade6() {
     }
     //result
     var gpa = allgr / allcr;
-    document.getElementById("demo1").innerHTML = gpa.toFixed(2);
+    document.getElementById("demo6").innerHTML = gpa.toFixed(2);
    
 
     
@@ -464,19 +464,20 @@ function grade7() {
    
 
     // retrieve user input
-    ingr[0] = document.getElementById("510201").value;
-    ingr[1] = document.getElementById("510202").value;
-    ingr[2] = document.getElementById("510203").value;
-    ingr[3] = document.getElementById("510204").value;
-    ingr[4] = document.getElementById("510205").value;
-    ingr[5] = document.getElementById("510207").value;
-    ingr[6] = document.getElementById("510209").value;
+    ingr[0] = document.getElementById("540201").value;
+    ingr[1] = document.getElementById("540202").value;
+    ingr[2] = document.getElementById("540203").value;
+    ingr[3] = document.getElementById("540204").value;
+    ingr[4] = document.getElementById("540205").value;
+    ingr[5] = document.getElementById("540206").value;
+    ingr[6] = document.getElementById("540207").value;
+    ingr[7] = document.getElementById("540208").value;
    
     
   
 
     //credits
-    incr = [3,1.5,3,1.5,3,3,3]
+    incr = [3,1.5,3,1.5,3,1.5,3,1.5]
   
 
     // Calculate GPA
@@ -495,7 +496,7 @@ function grade7() {
         else if (ingr[x] == gr[9] || ingr[x] == gr[10] ) {
             alert("Error- For Grade F / NA  GPA= Incomplete")
             var msg = "Incomplete"
-            document.getElementById("demo1").innerHTML = msg;
+            document.getElementById("demo7").innerHTML = msg;
             return 0;
 
         }
@@ -516,7 +517,7 @@ function grade7() {
     }
     //result
     var gpa = allgr / allcr;
-    document.getElementById("demo1").innerHTML = gpa.toFixed(2);
+    document.getElementById("demo7").innerHTML = gpa.toFixed(2);
    
 
     
@@ -539,19 +540,19 @@ function grade8() {
    
 
     // retrieve user input
-    ingr[0] = document.getElementById("510201").value;
-    ingr[1] = document.getElementById("510202").value;
-    ingr[2] = document.getElementById("510203").value;
-    ingr[3] = document.getElementById("510204").value;
-    ingr[4] = document.getElementById("510205").value;
-    ingr[5] = document.getElementById("510207").value;
-    ingr[6] = document.getElementById("510209").value;
+    ingr[0] = document.getElementById("540219").value;
+    ingr[1] = document.getElementById("540220").value;
+    ingr[2] = document.getElementById("540221").value;
+    ingr[3] = document.getElementById("540222P").value;
+    ingr[4] = document.getElementById("optional").value;
+    ingr[5] = document.getElementById("optionalLab").value;
+  
    
     
   
 
     //credits
-    incr = [3,1.5,3,1.5,3,3,3]
+    incr = [3,1.5,3,6,3,1.5]
   
 
     // Calculate GPA
@@ -570,7 +571,7 @@ function grade8() {
         else if (ingr[x] == gr[9] || ingr[x] == gr[10] ) {
             alert("Error- For Grade F / NA  GPA= Incomplete")
             var msg = "Incomplete"
-            document.getElementById("demo1").innerHTML = msg;
+            document.getElementById("demo8").innerHTML = msg;
             return 0;
 
         }
@@ -591,7 +592,7 @@ function grade8() {
     }
     //result
     var gpa = allgr / allcr;
-    document.getElementById("demo1").innerHTML = gpa.toFixed(2);
+    document.getElementById("demo8").innerHTML = gpa.toFixed(2);
    
 
     
