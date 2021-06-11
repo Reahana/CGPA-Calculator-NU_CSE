@@ -1,2298 +1,599 @@
-function myGrade() {
-    var text;
-    var Th = 3;
-    var Pr = 1.5;
-    // 510201 Structured Programming Language   3.0
-    //  510202 Structured Programming Language Lab  1.5
-    // 510203 Electrical and Electronic Circuit  3.0 
-    // 510204 Electrical and Electronic Circuit Lab 1.5
-    //  510205 Calculus  3.0 
-    // 510207 Physics 3.0 
-    // 510209 English 3.0 
+//1st Semester
+function grade1() {
+
+    //arrays
+    var gr = new Array();
+    var pt = new Array();
+    var ingr = new Array();
+    var incr = new Array();
+
+
+    // define valid grades and their values
     
-    //1st semester
-    // 510201
-    var G = document.getElementById("myInput510201").value
-
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s1 = text * Th;
-
-
-
-    // 510202
-    var G = document.getElementById("myInput510202").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s2 = text * Pr;
-
-
-    // 510203
-    var G = document.getElementById("myInput510203").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-
-
-    var s3 = text * Th;
-
-
-    // 510204
-    var G = document.getElementById("myInput510204").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s4 = text * Pr;
-
-    // 510205
-    var G = document.getElementById("myInput510205").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s5 = text * Th;
-
-    // 510207
-    var G = document.getElementById("myInput510207").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s6 = text * Th;
-
-    // 510209
-    var G = document.getElementById("myInput510209").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s7 = text * Th;
-
-    //cgpa
-    var Cr = 18;
-    var result = (s1 + s2 + s3 + s4 + s5 + s6 + s7) / Cr;
-    document.getElementById("demo1").innerHTML = result;
-
-    //2nd semester
-    // 510221
-    var G = document.getElementById("myInput510221").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s1 = text * Th;
-
-    // 510222
-    var G = document.getElementById("myInput510222").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s2 = text * Pr;
-
-
-    // 510223
-    var G = document.getElementById("myInput510223").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-
-
-    var s3 = text * Th;
-
-
-    // 510225
-    var G = document.getElementById("myInput510225").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s4 = text * Th;
-
-    // 510227
-    var G = document.getElementById("myInput510227").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s5 = text * Th;
-
-    // 510229
-    var G = document.getElementById("myInput510229").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s6 = text * Th;
-
-    //cgpa
-    var Cr = 16.5;
-    var result = (s1 + s2 + s3 + s4 + s5 + s6) / Cr;
-    document.getElementById("demo2").innerHTML = result;
-
-    //3rd semester
-    // 520201
-    var G = document.getElementById("myInput520201").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s1 = text * Th;
-
-    // 520202
-    var G = document.getElementById("myInput520202").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s2 = text * Pr;
-
-
-    // 520203
-    var G = document.getElementById("myInput520203").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-
-
-    var s3 = text * Th;
-
-
-    // 520204
-    var G = document.getElementById("myInput520204").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s4 = text * Pr;
-
-    // 520205
-    var G = document.getElementById("myInput520205").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s5 = text * Th;
-
-    // 520207
-    var G = document.getElementById("myInput520207").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s6 = text * Th;
-
-    // 520209
-    var G = document.getElementById("myInput520209").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s7 = text * Th;
-
-    //cgpa
-    var Cr = 18;
-    var result = (s1 + s2 + s3 + s4 + s5 + s6 + s7) / Cr;
-    document.getElementById("demo3").innerHTML = result;
-
-    //4th semester
-    // 520221
-    var G = document.getElementById("myInput520221").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s1 = text * Th;
-
-    // 520222
-    var G = document.getElementById("myInput520222").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s2 = text * Pr;
-
-
-    // 520223
-    var G = document.getElementById("myInput520223").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-
-
-    var s3 = text * Th;
-
-
-    // 520224
-    var G = document.getElementById("myInput520224").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s4 = text * Pr;
-
-    // 520225
-    var G = document.getElementById("myInput520225").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s5 = text * Th;
-
-    // 520226
-    var G = document.getElementById("myInput520226").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s6 = text * Pr;
-
-    // 520227
-    var G = document.getElementById("myInput520227").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s7 = text * Th;
-
-    //cgpa
-    var Cr = 16.5;
-    var result = (s1 + s2 + s3 + s4 + s5 + s6 + s7) / Cr;
-    document.getElementById("demo4").innerHTML = result;
-
-    //5th semester
-    // 530201 
-    var G = document.getElementById("myInput530201").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s1 = text * Th;
-
-    // 530202 
-    var G = document.getElementById("myInput530202").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s2 = text * Pr;
-    // 530203  
-    var G = document.getElementById("myInput530203").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s3 = text * Th;
-    // 530204   
-    var G = document.getElementById("myInput530204").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s4 = text * Pr;
-    // 530205 
-    var G = document.getElementById("myInput530205").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s5 = text * Th;
-    // 530206 
-    var G = document.getElementById("myInput530206").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s6 = text * Pr;
-    // 530207 
-    var G = document.getElementById("myInput530207").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-
-    }
-    var s7 = text * Th;
-
-    //cgpa
-    var Cr = 16.5
-    var result = (s1 + s2 + s3 + s4 + s5 + s6 + s7) / Cr;
-    document.getElementById("demo5").innerHTML = result;
+    gr =["A+","A","A-","B+","B","B-","C+","C","D","F","NA"] 
+    pt =[ 4,3.75,3.50,3.25,3,2.75,2.50,2.25 ,2,0,0]
+   
+
+    // retrieve user input
+    ingr[0] = document.getElementById("510201").value;
+    ingr[1] = document.getElementById("510202").value;
+    ingr[2] = document.getElementById("510203").value;
+    ingr[3] = document.getElementById("510204").value;
+    ingr[4] = document.getElementById("510205").value;
+    ingr[5] = document.getElementById("510207").value;
+    ingr[6] = document.getElementById("510209").value;
+   
     
+  
 
-    //6th semester
-    // 530219 
-    var G = document.getElementById("myInput530219").value;
+    //credits
+    incr = [3,1.5,3,1.5,3,3,3]
+  
 
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
+    // Calculate GPA
 
+    var allgr = 0;
+    var allcr = 0;
+    var gpa = 0;
+    //Condition
+    for (var x = 0; x < ingr.length; x++) {
+        if (ingr[x] == "") {
+            alert("Error- Grade cannot be empty.");
+            return 0;
+
+        }
+
+        else if (ingr[x] == gr[9] || ingr[x] == gr[10] ) {
+            alert("Error- For Grade F / NA  GPA= Incomplete")
+            var msg = "Incomplete"
+            document.getElementById("demo1").innerHTML = msg;
+            return 0;
+
+        }
+        var validgrcheck = 0;
+        for (var xx = 0; xx < gr.length; xx++) {
+            if (ingr[x] == gr[xx]) {
+                allgr = allgr + (parseFloat(incr[x], 10) * pt[xx]);
+                allcr = allcr + parseFloat(incr[x], 10);
+                validgrcheck = 1;
+                break;
+            }
+
+        }
+        if (validgrcheck == 0) {
+            alert("Error- Please enter correct input and  use standard  grades in the form of A A- B+ ...F.");
+            return 0;
+        }
     }
-    var s1 = text * Th;
+    //result
+    var gpa = allgr / allcr;
+    document.getElementById("demo1").innerHTML = gpa.toFixed(2);
+   
 
-    // 530220 
-    var G = document.getElementById("myInput530220").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s2 = text * Pr;
-
-    // 530221 
-    var G = document.getElementById("myInput530221").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s3 = text * Th;
-
-    // 530222  
-    var G = document.getElementById("myInput530222").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s4 = text * Pr;
-
-    // 530223 
-    var G = document.getElementById("myInput530223").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s5 = text * Th;
-
-    //  530224  
-    var G = document.getElementById("myInput530224").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s6 = text * Pr;
-
-    //  530225 
-    var G = document.getElementById("myInput530225").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s7 = text * Th;
-
-    //cgpa
-    var Cr = 16.5
-    var result = (s1 + s2 + s3 + s4 + s5 + s6 + s7) / Cr;
-    document.getElementById("demo6").innerHTML = result;
-
-    //7th semester
-    // 540201 
-    var G = document.getElementById("myInput540201").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-    }
-    var s1 = text * Th;
-
-    // 540202  
-    var G = document.getElementById("myInput540202").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s2 = text * Pr;
-
-    //  540203 
-    var G = document.getElementById("myInput540203").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s3 = text * Th;
-
-    //  540204  
-    var G = document.getElementById("myInput540204").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s4 = text * Pr;
-
-    //   540205 
-    var G = document.getElementById("myInput540205").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s5 = text * Th;
-
-    //   540206 
-    var G = document.getElementById("myInput540206").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s6 = text * Pr;
-
-    //  540207  
-    var G = document.getElementById("myInput540207").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s7 = text * Th;
-
-    //  540208  
-    var G = document.getElementById("myInput540208").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s8 = text * Pr;
-
-    //cgpa
-    var Cr = 18.0
-    var result = (s1 + s2 + s3 + s4 + s5 + s6 + s7 + s8) / Cr;
-    document.getElementById("demo7").innerHTML = result;
-
-    //8th semester
-    // 540219  
-    var G = document.getElementById("myInput540219").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s1 = text * Th;
-    // 540220  
-    var G = document.getElementById("myInput540220").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s2 = text * Pr;
-    // 540221 
-    var G = document.getElementById("myInput540221").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s3 = text * Th;
-
-    //  540222  project
-    var G = document.getElementById("myInput540222").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var pj = 6;
-    var sp = text * pj;
-
-    //  5402XX optional
-    var G = document.getElementById("optional").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var s0 = text * Th;
-
-    //  5402XXL optional lab
-    var G = document.getElementById("optionalLab").value;
-
-    switch (G) {
-        case "A+":
-            text = 4.00;
-            break;
-        case "A":
-            text = 3.75;
-            break;
-        case "A-":
-            text = 3.50;
-            break;
-        case "B+":
-            text = 3.25;
-            break;
-        case "B":
-            text = 3;
-            break;
-        case "B-":
-            text = 2.75;
-            break;
-        case "C+":
-            text = 2.50;
-            break;
-        case "C":
-            text = 2.25;
-            break;
-        case "D":
-            text = 2.00;
-            break;
-        case "F":
-            text = 0.00;
-            break;
-        default:
-            text = 0;
-
-    }
-    var sl0 = text * Pr;
-
-    //cgpa
-    var Cr = 18
-    var result = (s1 + s2 + s3 + sp + s0 + sl0) / Cr;
-    document.getElementById("demo8").innerHTML = result;
-
-    //FINAL
-
-    var X1 = document.getElementById("myInput1").value;
-    var a1 = X1 * 18;
-    var X2 = document.getElementById("myInput2").value;
-    var a2 = X2 * 16.5;
-    var X3 = document.getElementById("myInput3").value;
-    var a3 = X3 * 18;
-    var X4 = document.getElementById("myInput4").value;
-    var a4 = X4 * 16.5;
-    var X5 = document.getElementById("myInput5").value;
-    var a5 = X5 * 16.5;
-    var X6 = document.getElementById("myInput6").value;
-    var a6 = X6 * 16.5;
-    var X7 = document.getElementById("myInput7").value;
-    var a7 = X7 * 18;
-    var X8 = document.getElementById("myInput8").value;
-    var a8 = X8 * 18;
-
-    var Cr = 138;
-    var result = (a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8) / Cr;
     
-    document.getElementById("demo").innerHTML = result;
-} 
+}//Function
+
+//2nd Semester
+function grade2() {
+
+    //arrays
+    var gr = new Array();
+    var pt = new Array();
+    var ingr = new Array();
+    var incr = new Array();
+
+
+    // define valid grades and their values
+    
+    gr =["A+","A","A-","B+","B","B-","C+","C","D","F","NA"] 
+    pt =[ 4,3.75,3.50,3.25,3,2.75,2.50,2.25 ,2,0,0]
+   
+
+    // retrieve user input
+    ingr[0] = document.getElementById("510221").value;
+    ingr[1] = document.getElementById("510222").value;
+    ingr[2] = document.getElementById("510223").value;
+    ingr[3] = document.getElementById("510225").value;
+    ingr[4] = document.getElementById("510227").value;
+    ingr[5] = document.getElementById("510229").value;
+   
+    
+  
+
+    //credits
+    incr = [3,1.5,3,3,3,3]
+  
+
+    // Calculate GPA
+
+    var allgr = 0;
+    var allcr = 0;
+    var gpa = 0;
+    //Condition
+    for (var x = 0; x < ingr.length; x++) {
+        if (ingr[x] == "") {
+            alert("Error- Grade cannot be empty.");
+            return 0;
+
+        }
+
+        else if (ingr[x] == gr[9] || ingr[x] == gr[10] ) {
+            alert("Error- For Grade F / NA  GPA= Incomplete")
+            var msg = "Incomplete"
+            document.getElementById("demo2").innerHTML = msg;
+            return 0;
+
+        }
+        var validgrcheck = 0;
+        for (var xx = 0; xx < gr.length; xx++) {
+            if (ingr[x] == gr[xx]) {
+                allgr = allgr + (parseFloat(incr[x], 10) * pt[xx]);
+                allcr = allcr + parseFloat(incr[x], 10);
+                validgrcheck = 1;
+                break;
+            }
+
+        }
+        if (validgrcheck == 0) {
+            alert("Error- Please enter correct input and  use standard  grades in the form of A A- B+ ...F.");
+            return 0;
+        }
+    }
+    //result
+    var gpa = allgr / allcr;
+    document.getElementById("demo2").innerHTML = gpa.toFixed(2);
+   
+
+    
+}//Function
+
+//3rd Semester
+function grade3() {
+
+    //arrays
+    var gr = new Array();
+    var pt = new Array();
+    var ingr = new Array();
+    var incr = new Array();
+
+
+    // define valid grades and their values
+    
+    gr =["A+","A","A-","B+","B","B-","C+","C","D","F","NA"] 
+    pt =[ 4,3.75,3.50,3.25,3,2.75,2.50,2.25 ,2,0,0]
+   
+
+    // retrieve user input
+    ingr[0] = document.getElementById("520201").value;
+    ingr[1] = document.getElementById("520202").value;
+    ingr[2] = document.getElementById("520203").value;
+    ingr[3] = document.getElementById("520204").value;
+    ingr[4] = document.getElementById("520205").value;
+    ingr[5] = document.getElementById("520207").value;
+    ingr[6] = document.getElementById("520209").value;
+   
+    
+  
+
+    //credits
+    incr = [3,1.5,3,1.5,3,3,3]
+  
+
+    // Calculate GPA
+
+    var allgr = 0;
+    var allcr = 0;
+    var gpa = 0;
+    //Condition
+    for (var x = 0; x < ingr.length; x++) {
+        if (ingr[x] == "") {
+            alert("Error- Grade cannot be empty.");
+            return 0;
+
+        }
+
+        else if (ingr[x] == gr[9] || ingr[x] == gr[10] ) {
+            alert("Error- For Grade F / NA  GPA= Incomplete")
+            var msg = "Incomplete"
+            document.getElementById("demo3").innerHTML = msg;
+            return 0;
+
+        }
+        var validgrcheck = 0;
+        for (var xx = 0; xx < gr.length; xx++) {
+            if (ingr[x] == gr[xx]) {
+                allgr = allgr + (parseFloat(incr[x], 10) * pt[xx]);
+                allcr = allcr + parseFloat(incr[x], 10);
+                validgrcheck = 1;
+                break;
+            }
+
+        }
+        if (validgrcheck == 0) {
+            alert("Error- Please enter correct input and  use standard  grades in the form of A A- B+ ...F.");
+            return 0;
+        }
+    }
+    //result
+    var gpa = allgr / allcr;
+    document.getElementById("demo3").innerHTML = gpa.toFixed(2);
+   
+
+    
+}//Function
+
+//4th Semester
+function grade4() {
+
+    //arrays
+    var gr = new Array();
+    var pt = new Array();
+    var ingr = new Array();
+    var incr = new Array();
+
+
+    // define valid grades and their values
+    
+    gr =["A+","A","A-","B+","B","B-","C+","C","D","F","NA"] 
+    pt =[ 4,3.75,3.50,3.25,3,2.75,2.50,2.25 ,2,0,0]
+   
+
+    // retrieve user input
+    ingr[0] = document.getElementById("520221").value;
+    ingr[1] = document.getElementById("520222").value;
+    ingr[2] = document.getElementById("520223").value;
+    ingr[3] = document.getElementById("520224").value;
+    ingr[4] = document.getElementById("520225").value;
+    ingr[5] = document.getElementById("520226").value;
+    ingr[6] = document.getElementById("520227").value;
+   
+    
+  
+
+    //credits
+    incr = [3,1.5,3,1.5,3,1.5,3]
+  
+
+    // Calculate GPA
+
+    var allgr = 0;
+    var allcr = 0;
+    var gpa = 0;
+    //Condition
+    for (var x = 0; x < ingr.length; x++) {
+        if (ingr[x] == "") {
+            alert("Error- Grade cannot be empty.");
+            return 0;
+
+        }
+
+        else if (ingr[x] == gr[9] || ingr[x] == gr[10] ) {
+            alert("Error- For Grade F / NA  GPA= Incomplete")
+            var msg = "Incomplete"
+            document.getElementById("demo4").innerHTML = msg;
+            return 0;
+
+        }
+        var validgrcheck = 0;
+        for (var xx = 0; xx < gr.length; xx++) {
+            if (ingr[x] == gr[xx]) {
+                allgr = allgr + (parseFloat(incr[x], 10) * pt[xx]);
+                allcr = allcr + parseFloat(incr[x], 10);
+                validgrcheck = 1;
+                break;
+            }
+
+        }
+        if (validgrcheck == 0) {
+            alert("Error- Please enter correct input and  use standard  grades in the form of A A- B+ ...F.");
+            return 0;
+        }
+    }
+    //result
+    var gpa = allgr / allcr;
+    document.getElementById("demo4").innerHTML = gpa.toFixed(2);
+   
+
+    
+}//Function
+
+//5th Semester
+function grade5() {
+
+    //arrays
+    var gr = new Array();
+    var pt = new Array();
+    var ingr = new Array();
+    var incr = new Array();
+
+
+    // define valid grades and their values
+    
+    gr =["A+","A","A-","B+","B","B-","C+","C","D","F","NA"] 
+    pt =[ 4,3.75,3.50,3.25,3,2.75,2.50,2.25 ,2,0,0]
+   
+
+    // retrieve user input
+    ingr[0] = document.getElementById("530201").value;
+    ingr[1] = document.getElementById("530202").value;
+    ingr[2] = document.getElementById("530203").value;
+    ingr[3] = document.getElementById("530204").value;
+    ingr[4] = document.getElementById("530205").value;
+    ingr[5] = document.getElementById("530206").value;
+    ingr[6] = document.getElementById("530207").value;
+   
+    
+  
+
+    //credits
+    incr = [3,1.5,3,1.5,3,1.5,3]
+  
+
+    // Calculate GPA
+
+    var allgr = 0;
+    var allcr = 0;
+    var gpa = 0;
+    //Condition
+    for (var x = 0; x < ingr.length; x++) {
+        if (ingr[x] == "") {
+            alert("Error- Grade cannot be empty.");
+            return 0;
+
+        }
+
+        else if (ingr[x] == gr[9] || ingr[x] == gr[10] ) {
+            alert("Error- For Grade F / NA  GPA= Incomplete")
+            var msg = "Incomplete"
+            document.getElementById("demo5").innerHTML = msg;
+            return 0;
+
+        }
+        var validgrcheck = 0;
+        for (var xx = 0; xx < gr.length; xx++) {
+            if (ingr[x] == gr[xx]) {
+                allgr = allgr + (parseFloat(incr[x], 10) * pt[xx]);
+                allcr = allcr + parseFloat(incr[x], 10);
+                validgrcheck = 1;
+                break;
+            }
+
+        }
+        if (validgrcheck == 0) {
+            alert("Error- Please enter correct input and  use standard  grades in the form of A A- B+ ...F.");
+            return 0;
+        }
+    }
+    //result
+    var gpa = allgr / allcr;
+    document.getElementById("demo5").innerHTML = gpa.toFixed(2);
+   
+
+    
+}//Function
+
+//6th Semester
+function grade6() {
+
+    //arrays
+    var gr = new Array();
+    var pt = new Array();
+    var ingr = new Array();
+    var incr = new Array();
+
+
+    // define valid grades and their values
+    
+    gr =["A+","A","A-","B+","B","B-","C+","C","D","F","NA"] 
+    pt =[ 4,3.75,3.50,3.25,3,2.75,2.50,2.25 ,2,0,0]
+   
+
+    // retrieve user input
+    ingr[0] = document.getElementById("530219").value;
+    ingr[1] = document.getElementById("530220").value;
+    ingr[2] = document.getElementById("530221").value;
+    ingr[3] = document.getElementById("530222").value;
+    ingr[4] = document.getElementById("530223").value;
+    ingr[5] = document.getElementById("530224").value;
+    ingr[6] = document.getElementById("530225").value;
+   
+    
+  
+
+    //credits
+    incr = [3,1.5,3,1.5,3,1.5,3]
+  
+
+    // Calculate GPA
+
+    var allgr = 0;
+    var allcr = 0;
+    var gpa = 0;
+    //Condition
+    for (var x = 0; x < ingr.length; x++) {
+        if (ingr[x] == "") {
+            alert("Error- Grade cannot be empty.");
+            return 0;
+
+        }
+
+        else if (ingr[x] == gr[9] || ingr[x] == gr[10] ) {
+            alert("Error- For Grade F / NA  GPA= Incomplete")
+            var msg = "Incomplete"
+            document.getElementById("demo6").innerHTML = msg;
+            return 0;
+
+        }
+        var validgrcheck = 0;
+        for (var xx = 0; xx < gr.length; xx++) {
+            if (ingr[x] == gr[xx]) {
+                allgr = allgr + (parseFloat(incr[x], 10) * pt[xx]);
+                allcr = allcr + parseFloat(incr[x], 10);
+                validgrcheck = 1;
+                break;
+            }
+
+        }
+        if (validgrcheck == 0) {
+            alert("Error- Please enter correct input and  use standard  grades in the form of A A- B+ ...F.");
+            return 0;
+        }
+    }
+    //result
+    var gpa = allgr / allcr;
+    document.getElementById("demo6").innerHTML = gpa.toFixed(2);
+   
+
+    
+}//Function
+
+//7th Semester
+function grade7() {
+
+    //arrays
+    var gr = new Array();
+    var pt = new Array();
+    var ingr = new Array();
+    var incr = new Array();
+
+
+    // define valid grades and their values
+    
+    gr =["A+","A","A-","B+","B","B-","C+","C","D","F","NA"] 
+    pt =[ 4,3.75,3.50,3.25,3,2.75,2.50,2.25 ,2,0,0]
+   
+
+    // retrieve user input
+    ingr[0] = document.getElementById("540201").value;
+    ingr[1] = document.getElementById("540202").value;
+    ingr[2] = document.getElementById("540203").value;
+    ingr[3] = document.getElementById("540204").value;
+    ingr[4] = document.getElementById("540205").value;
+    ingr[5] = document.getElementById("540206").value;
+    ingr[6] = document.getElementById("540207").value;
+    ingr[7] = document.getElementById("540208").value;
+   
+    
+  
+
+    //credits
+    incr = [3,1.5,3,1.5,3,1.5,3,1.5]
+  
+
+    // Calculate GPA
+
+    var allgr = 0;
+    var allcr = 0;
+    var gpa = 0;
+    //Condition
+    for (var x = 0; x < ingr.length; x++) {
+        if (ingr[x] == "") {
+            alert("Error- Grade cannot be empty.");
+            return 0;
+
+        }
+
+        else if (ingr[x] == gr[9] || ingr[x] == gr[10] ) {
+            alert("Error- For Grade F / NA  GPA= Incomplete")
+            var msg = "Incomplete"
+            document.getElementById("demo7").innerHTML = msg;
+            return 0;
+
+        }
+        var validgrcheck = 0;
+        for (var xx = 0; xx < gr.length; xx++) {
+            if (ingr[x] == gr[xx]) {
+                allgr = allgr + (parseFloat(incr[x], 10) * pt[xx]);
+                allcr = allcr + parseFloat(incr[x], 10);
+                validgrcheck = 1;
+                break;
+            }
+
+        }
+        if (validgrcheck == 0) {
+            alert("Error- Please enter correct input and  use standard  grades in the form of A A- B+ ...F.");
+            return 0;
+        }
+    }
+    //result
+    var gpa = allgr / allcr;
+    document.getElementById("demo7").innerHTML = gpa.toFixed(2);
+   
+
+    
+}//Function
+
+//8th Semester
+function grade8() {
+
+    //arrays
+    var gr = new Array();
+    var pt = new Array();
+    var ingr = new Array();
+    var incr = new Array();
+
+
+    // define valid grades and their values
+    
+    gr =["A+","A","A-","B+","B","B-","C+","C","D","F","NA"] 
+    pt =[ 4,3.75,3.50,3.25,3,2.75,2.50,2.25 ,2,0,0]
+   
+
+    // retrieve user input
+    ingr[0] = document.getElementById("540219").value;
+    ingr[1] = document.getElementById("540220").value;
+    ingr[2] = document.getElementById("540221").value;
+    ingr[3] = document.getElementById("540222P").value;
+    ingr[4] = document.getElementById("optional").value;
+    ingr[5] = document.getElementById("optionalLab").value;
+  
+   
+    
+  
+
+    //credits
+    incr = [3,1.5,3,6,3,1.5]
+  
+
+    // Calculate GPA
+
+    var allgr = 0;
+    var allcr = 0;
+    var gpa = 0;
+    //Condition
+    for (var x = 0; x < ingr.length; x++) {
+        if (ingr[x] == "") {
+            alert("Error- Grade cannot be empty.");
+            return 0;
+
+        }
+
+        else if (ingr[x] == gr[9] || ingr[x] == gr[10] ) {
+            alert("Error- For Grade F / NA  GPA= Incomplete")
+            var msg = "Incomplete"
+            document.getElementById("demo8").innerHTML = msg;
+            return 0;
+
+        }
+        var validgrcheck = 0;
+        for (var xx = 0; xx < gr.length; xx++) {
+            if (ingr[x] == gr[xx]) {
+                allgr = allgr + (parseFloat(incr[x], 10) * pt[xx]);
+                allcr = allcr + parseFloat(incr[x], 10);
+                validgrcheck = 1;
+                break;
+            }
+
+        }
+        if (validgrcheck == 0) {
+            alert("Error- Please enter correct input and  use standard  grades in the form of A A- B+ ...F.");
+            return 0;
+        }
+    }
+    //result
+    var gpa = allgr / allcr;
+    document.getElementById("demo8").innerHTML = gpa.toFixed(2);
+   
+
+    
+}//Function
