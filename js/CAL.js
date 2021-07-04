@@ -600,27 +600,61 @@ function grade8() {
 
 //FINAL
 function cgpa() {
-    
 
+    //////
+
+//     var gpa = new Array();
+
+//     gpa[0] = document.getElementById("1").value;
+//     gpa[1] = document.getElementById("2").value;
+//     gpa[2] = document.getElementById("3").value;
+//     gpa[3] = document.getElementById("4").value;
+//     gpa[4] = document.getElementById("5").value;
+//     gpa[5] = document.getElementById("6").value;
+//     gpa[6] = document.getElementById("7").value;
+//     gpa[7] = document.getElementById("8").value;
+   
+// //  for (var x = 0; x < gpa.length; x++) {
+// //      console.log(gpa)
+// //  }
+// //  var sum = gpa.reduce(function(a, b){
+// //     return a + b;
+// // }, 0);
+
+// // console.log(sum); 
+
+// var sum = 0
+
+// for(var i = 0; i < gpa.length; i++){
+
+//  sum += gpa[i]
+
+// }
+// console.log(sum);
+    /////
 var X1 = document.getElementById("1").value;
-var a1 = X1 * 18;
+// var a1 = X1 * 18;
 var X2 = document.getElementById("2").value;
-var a2 = X2 * 16.5;
+// var a2 = X2 * 16.5;
 var X3 = document.getElementById("3").value;
-var a3 = X3 * 18;
+// var a3 = X3 * 18;
 var X4 = document.getElementById("4").value;
-var a4 = X4 * 16.5;
+// var a4 = X4 * 16.5;
 var X5 = document.getElementById("5").value;
-var a5 = X5 * 16.5;
+// var a5 = X5 * 16.5;
 var X6 = document.getElementById("6").value;
-var a6 = X6 * 16.5;
+// var a6 = X6 * 16.5;
 var X7 = document.getElementById("7").value;
-var a7 = X7 * 18;
+// var a7 = X7 * 18;
 var X8 = document.getElementById("8").value;
-var a8 = X8 * 18;
+// var a8 = X8 * 18;
+var t= document.getElementById("Num").value;
 
-var Cr = 138;
-var result = (a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8) / Cr;
+// var Cr = 138;
+// var result = (a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8) / Cr;
 
+
+
+var result = (X1 + X2 + X3 + X4 + X5 + X6 + X7 + X8) / t;
 document.getElementById("demo").innerHTML = result;
 }
