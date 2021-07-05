@@ -47,6 +47,8 @@ function grade1() {
             alert("Error- For Grade F / NA  GPA= Incomplete")
             var msg = "Incomplete"
             document.getElementById("demo1").innerHTML = msg;
+            document.getElementById("demo1").style.color = "orangred";
+   
             return 0;
 
         }
