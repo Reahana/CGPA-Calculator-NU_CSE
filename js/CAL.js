@@ -47,6 +47,7 @@ function grade1() {
             alert("Error- For Grade F / NA  GPA= Incomplete")
             var msg = "Incomplete"
             document.getElementById("demo1").innerHTML = msg;
+            document.getElementById("demo1").style.color = "orangred";
             return 0;
 
         }
@@ -68,6 +69,7 @@ function grade1() {
     //result
     var gpa = allgr / allcr;
     document.getElementById("demo1").innerHTML = gpa.toFixed(2);
+    document.getElementById("demo1").style.color = "orangred";
    
 
     
