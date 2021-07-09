@@ -621,6 +621,8 @@ var a7 = X7 * 18;
 var X8 = document.getElementById("8").value;
 var a8 = X8 * 18;
 
+
+
 var Cr = 138;
 var result = (a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8) / Cr;
 document.getElementById("demo").innerHTML = result;
