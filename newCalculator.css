@@ -13,7 +13,7 @@
   
   }
   .dept{
-    font-size: 18px;
+    font-size: 20px;
   }
 img{width: 60px;
 padding-left: 10px;
@@ -42,8 +42,20 @@ float: left;}
 margin-top: 10px;
 text-align: center;
 color: #f1f1f1;
-font-size: 15px;
-padding: 5px;}
+font-size: 18px;
+padding: 5px;
+min-height: 20px;
+}
+
+.footer a{
+  color:#fff;
+  text-decoration: none;
+}
+
+.footer a:hover{
+
+  text-decoration:underline;
+}
 
 .collapsible {
   background-color: blue; 
