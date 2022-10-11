@@ -1,69 +1,579 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>CGPA Calculator || NU_CSE</title>
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <header class="py-2 " >
-        <div class="container bg-danger py-2">
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-2">
-                    <a href="http://www.nu.ac.bd/"> <img src="image/nu_logo.png" alt="logo" width="100"></a>
-                </div>
-                <div class="col-md-8">
-                    <h1 class="text-white pt-2">National University Bangladesh</h1>
-                    <p class="text-white font-size-1 pt-1">Department of <br />Computer Science and Engineering</p>
-                </div>
-                <div class="col-md-1"></div>
-            </div>
-        </div>
-    </header>
-    <section class="">
-        <div class="container bg-light ">
-            <div class="row">
-                <div class="col-md-6 py-5">
-                    <table class="table table-bordered ">
-                        <thead>
-                           <tr>
-                               <th>Course Code </th>
-                               <th>Course name</th>
-                               <th>Grade</th>  
-                           </tr>
-                        </thead>
-                        <tbody>
-                             <!-- 1st -->
-                            <tr>
-                                <td> 510201: </td>
-                                <td> Structured Programming Language </td>
-                                <td><input id="510201" type="text"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-md-6">
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="py-2 ">
-        <div class="container bg-danger">
-            <div class="row">
-                <div class="col-md-12 ">
-                    <p class="text-white text-center pt-3">Copyright &copy; 2022; Amanda Reahana Gomes</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
 
-    <script src="./js/jquery-3.6.0.js"></script>
-    <script src="./js/bootstrap.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".css">
+    <title>CGPA Calculator || NU_CSE</title>
+</head>
+
+<body>
+    <div class="template">
+        <div class="header ">
+            <a href="http://www.nu.ac.bd/"> <img src="image/nu_logo.png" alt="logo"></a>
+            <h1>National University Bangladesh</h1>
+            <p class="dept">Department of <br />Computer Science and Engineering</p>
+        </div>
+
+        <div class="maincontent">
+            <p class="title">Calculate Your CGPA:</p>
+            <button type="button" class="collapsible">1st Semester</button>
+            <div class="content">
+                <table>
+                    <tr>
+                        <th> </th>
+                        <th>Grade</th>
+                    </tr>
+                    <!-- 1st -->
+                    <tr>
+                        <td> 510201: </td>
+                        <td><input id="510201" type="text"></td>
+                    </tr>
+                    <!-- 2nd -->
+                    <tr>
+                        <td>510202: </td>
+                        <td><input id="510202" type="text"></td>
+                    </tr>
+                    <!-- 3rd -->
+                    <tr>
+                        <td> 510203:</td>
+                        <td><input id="510203" type="text"></td>
+                    </tr>
+                    <!-- 4th-->
+                    <tr>
+                        <td> 510204:</td>
+                        <td><input id="510204" type="text"></td>
+                    </tr>
+                    <!--5th -->
+                    <tr>
+                        <td> 510205: </td>
+                        <td><input id="510205" type="text"></td>
+                    </tr>
+                    <!-- 6th -->
+                    <tr>
+                        <td> 510207: </td>
+                        <td><input id="510207" type="text"></td>
+                    </tr>
+                    <!-- 7th -->
+                    <tr>
+                        <td> 510209: </td>
+                        <td><input id="510209" type="text"></td>
+                    </tr>
+                    <!-- calculation -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button class="go" onclick="grade1()">Calculate</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- result -->
+                        <th>CGPA:</th>
+                        <td>
+                            <p id="demo1"></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- 2nd Semester -->
+            <button type="button" class="collapsible">2nd Semester</button>
+            <div class="content">
+                <table>
+                    <tr>
+                        <th> </th>
+                        <th>Grade</th>
+                    </tr>
+                    <!-- 1st -->
+                    <tr>
+                        <td> 510221: </td>
+                        <td><input id="510221" type="text"></td>
+                    </tr>
+                    <!-- 2nd -->
+                    <tr>
+                        <td>510222: </td>
+                        <td><input id="510222" type="text"></td>
+                    </tr>
+                    <!-- 3rd -->
+                    <tr>
+                        <td> 510223:</td>
+                        <td><input id="510223" type="text"></td>
+                    </tr>
+                    <!-- 4th-->
+                    <tr>
+                        <td> 510225: </td>
+                        <td><input id="510225" type="text"></td>
+                    </tr>
+                    <!--5th -->
+                    <tr>
+                        <td> 510227: </td>
+                        <td><input id="510227" type="text"></td>
+                    </tr>
+                    <!-- 6th -->
+                    <tr>
+                        <td> 510229: </td>
+                        <td><input id="510229" type="text"></td>
+                    </tr>
+                    <!-- calculation -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button class="go" onclick="grade2()">Calculate</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- result -->
+                        <th>CGPA:</th>
+                        <td>
+                            <p id="demo2"></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- 3rd Semester -->
+            <button type="button" class="collapsible">3rd Semester</button>
+            <div class="content">
+                <table>
+                    <tr>
+                        <th> </th>
+                        <th>Grade</th>
+                    </tr>
+                    <!-- 1st -->
+                    <tr>
+                        <td></td>
+                        <td> 520201: </td>
+                        <td><input id="520201" type="text"></td>
+                    </tr>
+                    <!-- 2nd -->
+                    <tr>
+                        <td>520202: </td>
+                        <td><input id="520202" type="text"></td>
+                    </tr>
+                    <!-- 3rd -->
+                    <tr>
+                        <td> 520203:</td>
+                        <td><input id="520203" type="text"></td>
+                    </tr>
+                    <!-- 4th-->
+                    <tr>
+                        <td> 520204:</td>
+                        <td><input id="520204" type="text"></td>
+                    </tr>
+                    <!--5th -->
+                    <tr>
+                        <td> 520205: </td>
+                        <td><input id="520205" type="text"></td>
+                    </tr>
+                    <!-- 6th -->
+                    <tr>
+                        <td> 520207: </td>
+                        <td><input id="520207" type="text"></td>
+                    </tr>
+                    <!-- 7th -->
+                    <tr>
+                        <td> 520209: </td>
+                        <td><input id="520209" type="text"></td>
+                    </tr>
+                    <!-- calculation -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button class="go" onclick="grade3()">Calculate</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- result -->
+                        <th>CGPA:</th>
+                        <td>
+                            <p id="demo3"></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- 4th Semester -->
+            <button type="button" class="collapsible">4th Semester</button>
+            <div class="content">
+                <table>
+                    <tr>
+                        <th> </th>
+                        <th>Grade</th>
+                    </tr>
+                    <!-- 1st -->
+                    <tr>
+                        <td> 520221: </td>
+                        <td><input id="520221" type="text"></td>
+                    </tr>
+                    <!-- 2nd -->
+                    <tr>
+                        <td>520222: </td>
+                        <td><input id="520222" type="text"></td>
+                    </tr>
+                    <!-- 3rd -->
+                    <tr>
+                        <td> 520223:</td>
+                        <td><input id="520223" type="text"></td>
+                    </tr>
+                    <!-- 4th-->
+                    <tr>
+                        <td> 520224:</td>
+                        <td><input id="520224" type="text"></td>
+                    </tr>
+                    <!--5th -->
+                    <tr>
+                        <td> 520225: </td>
+                        <td><input id="520225" type="text"></td>
+                    </tr>
+                    <!-- 6th -->
+                    <tr>
+                        <td> 520226: </td>
+                        <td><input id="520226" type="text"></td>
+                    </tr>
+                    <!-- 7th -->
+                    <tr>
+                        <td> 520227: </td>
+                        <td><input id="520227" type="text"></td>
+                    </tr>
+                    <!-- calculation -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button class="go" onclick="grade4()">Calculate</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- result -->
+                        <th>CGPA:</th>
+                        <td>
+                            <p id="demo4"></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- 5th Semester -->
+            <button type="button" class="collapsible">5th Semester</button>
+            <div class="content">
+                <table>
+                    <tr>
+                        <th> </th>
+                        <th>Grade</th>
+                    </tr>
+                    <!-- 1st -->
+                    <tr>
+                        <td> 530201 : </td>
+                        <td><input id="530201" type="text"></td>
+                    </tr>
+                    <!-- 2nd -->
+                    <tr>
+                        <td>530202:</td>
+                        <td><input id="530202" type="text"></td>
+                    </tr>
+                    <!-- 3rd -->
+                    <tr>
+                        <td>530203:</td>
+                        <td><input id="530203" type="text"></td>
+                    </tr>
+                    <!-- 4th -->
+                    <tr>
+                        <td>530204:</td>
+                        <td><input id="530204" type="text"></td>
+                    </tr>
+                    <!-- 5th -->
+                    <tr>
+                        <td>530205:</td>
+                        <td><input id="530205" type="text"></td>
+                    </tr>
+                    <!-- 6th -->
+                    <tr>
+                        <td>530206:</td>
+                        <td><input id="530206" type="text"></td>
+                    </tr>
+                    <!-- 7th -->
+                    <tr>
+                        <td>530207:</td>
+                        <td><input id="530207" type="text"></td>
+                    </tr>
+                    <!-- calculation -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button class="go" onclick="grade5()">Calculate</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- result -->
+                        <th>CGPA:</th>
+                        <td>
+                            <p id="demo5"></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- 6th semester -->
+            <button type="button" class="collapsible">6th Semester</button>
+            <div class="content">
+                <table>
+                    <tr>
+                        <th> </th>
+                        <th>Grade</th>
+                    </tr>
+                    <!-- 1st -->
+                    <tr>
+                        <td> 530219 : </td>
+                        <td><input id="530219" type="text"></td>
+                    </tr>
+                    <!-- 2nd -->
+                    <tr>
+                        <td>530220:</td>
+                        <td><input id="530220" type="text"></td>
+                    </tr>
+                    <!-- 3rd -->
+                    <tr>
+                        <td>530221:</td>
+                        <td><input id="530221" type="text"></td>
+                    </tr>
+                    <!-- 4th -->
+                    <tr>
+                        <td>530222:</td>
+                        <td><input id="530222" type="text"></td>
+                    </tr>
+                    <!-- 5th -->
+                    <tr>
+                        <td>530223:</td>
+                        <td><input id="530223" type="text"></td>
+                    </tr>
+                    <!-- 6th -->
+                    <tr>
+                        <td>530224:</td>
+                        <td><input id="530224" type="text"></td>
+                    </tr>
+                    <!-- 7th -->
+                    <tr>
+                        <td>530225:</td>
+                        <td><input id="530225" type="text"></td>
+                    </tr>
+                    <!-- calculation -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button class="go" onclick="grade6()">Calculate</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- result -->
+                        <th>CGPA:</th>
+                        <td>
+                            <p id="demo6"></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- 7th Semester -->
+            <button type="button" class="collapsible">7th Semester</button>
+            <div class="content">
+                <table>
+                    <tr>
+                        <th> </th>
+                        <th>Grade</th>
+                    </tr>
+                    <!-- 1st -->
+                    <tr>
+                        <td> 540201 : </td>
+                        <td><input id="540201" type="text"></td>
+                    </tr>
+                    <!-- 2nd -->
+                    <tr>
+                        <td>540202:</td>
+                        <td><input id="540202" type="text"></td>
+                    </tr>
+                    <!-- 3rd -->
+                    <tr>
+                        <td>540203:</td>
+                        <td><input id="540203" type="text"></td>
+                    </tr>
+                    <!-- 4th -->
+                    <tr>
+                        <td>540204:</td>
+                        <td><input id="540204" type="text"></td>
+                    </tr>
+                    <!-- 5th -->
+                    <tr>
+                        <td>540205:</td>
+                        <td><input id="540205" type="text"></td>
+                    </tr>
+                    <!-- 6th -->
+                    <tr>
+                        <td>540206:</td>
+                        <td><input id="540206" type="text"></td>
+                    </tr>
+                    <!-- 7th -->
+                    <tr>
+                        <td>540207:</td>
+                        <td><input id="540207" type="text"></td>
+                    </tr>
+                    <!-- 8th -->
+                    <tr>
+                        <td>540208:</td>
+                        <td><input id="540208" type="text"></td>
+                    </tr>
+                    <!-- calculation -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button class="go" onclick="grade7()">Calculate</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- result -->
+                        <th>CGPA:</th>
+                        <td>
+                            <p id="demo7"></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- 8th semester -->
+            <button type="button" class="collapsible">8th Semester</button>
+            <div class="content">
+                <table>
+                    <tr>
+                        <th> </th>
+                        <th>Grade</th>
+                    </tr>
+                    <!-- 1st -->
+                    <tr>
+                        <td>540219 :</td>
+                        <td><input id="540219" type="text"></td>
+                    </tr>
+                    <!-- 2nd -->
+                    <tr>
+                        <td>540220 :</td>
+                        <td><input id="540220" type="text"></td>
+                    </tr>
+                    <!-- 3rd -->
+                    <tr>
+                        <td>540221 :</td>
+                        <td><input id="540221" type="text"></td>
+                    </tr>
+                    <!-- 4th -->
+                    <tr>
+                        <td>540222 :</td>
+                        <td><input id="540222P" type="text"></td>
+                    </tr>
+                    <!-- 5th -->
+                    <tr>
+                        <td>Optional:</td>
+                        <td><input id="optional" type="text"></td>
+                    </tr>
+                    <!-- 6th -->
+                    <tr>
+                        <td>Op.Lab:</td>
+                        <td><input id="optionalLab" type="text"></td>
+                    </tr>
+                    <!-- calculation -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button class="go" onclick="grade8()">Calculate</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- result -->
+                        <th>CGPA:</th>
+                        <td>
+                            <p id="demo8"></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- final result -->
+            <button type="button" class="collapsible">Final Result</button>
+            <div class="content">
+                <table>
+                    <tr>
+                        <th> </th>
+                        <th>CGPA</th>
+                    </tr>
+                    <!-- 1st -->
+                    <tr>
+                        <td>1st Semester: </td>
+                        <td><input id="1" type="text"></td>
+                    </tr>
+                    <!-- 2nd -->
+                    <tr>
+                        <td>2nd Semester: </td>
+                        <td><input id="2" type="text"></td>
+                    </tr>
+                    <!-- 3rd -->
+                    <tr>
+                        <td>3rd Semester:</td>
+                        <td><input id="3" type="text"></td>
+                    </tr>
+                    <!-- 4th-->
+                    <tr>
+                        <td>4th Semester:</td>
+                        <td><input id="4" type="text"></td>
+                    </tr>
+                    <!--5th -->
+                    <tr>
+                        <td>5th Semester: </td>
+                        <td><input id="5" type="text"></td>
+                    </tr>
+                    <!-- 6th -->
+                    <tr>
+                        <td>6th Semester: </td>
+                        <td><input id="6" type="text"></td>
+                    </tr>
+                    <!-- 7th -->
+                    <tr>
+                        <td> 7th Semester:</td>
+                        <td><input id="7" type="text"></td>
+                    </tr>
+                    <!-- 8th-->
+                    <tr>
+                        <td> 8th Semester:</td>
+                        <td><input id="8" type="text"></td>
+                    </tr>
+
+
+                    <!-- calculation -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button class="go" onclick="cgpa()">Calculate</button>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- result -->
+                        <th>Final CGPA:</th>
+                        <td>
+                            <p id="demo"></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <!-- <p>Copyright &copy;Amanda Reahana Gomes</p> -->
+            <span>Created By <a href="#">Amanda Reahana Gomes</a> | &copy; 2020 All rights
+            reserved.</span>
+        </div>
+    </div>
+
+    <script src="js/newCalFunc.js"></script>
+    <script src="js/newCalculator.js"></script>
 </body>
+
 </html>
